@@ -1,0 +1,16 @@
+{
+  "name": "pubsubify",
+  "version": "1.0.0",
+  "description": "auto apply pubsubify pattern based on comments for shared state in react applications.",
+  "main": "pubsubify.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar": "^3.6.0",
+    "fs-extra": "^11.2.0"
+  }
+}
