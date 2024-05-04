@@ -100,7 +100,7 @@ let file = {
 
             // if current line has state comment,
             if (/\/\/ ?.state/.test(line)) {
-                const stateVariableInLastIndex = line.split(' = ')[0].split(' ');
+                const stateVariableInLastIndex = line.split(' = ')[0].split(':')[0].split(' ');
                 let stateVariableName = stateVariableInLastIndex[stateVariableInLastIndex.length - 1];
                 const stateVariableStartsWithUnderscore = stateVariableName.indexOf('_') === 0 ? true : false;
 
