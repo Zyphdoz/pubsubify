@@ -277,7 +277,7 @@ function copyFilesOnStart() {
 
 function watchForChangesAndMirror() {
     const watcher = chokidar.watch(sourceDir, {
-        ignored: /node_modules/,
+        ignored: [/node_modules/, /\.git/],
         persistent: true,
     });
 
