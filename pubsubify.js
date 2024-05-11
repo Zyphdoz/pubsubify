@@ -122,6 +122,8 @@ let file = {
                     this.modifiedContent.push(`        this._${stateVariableName} = value;`);
                     this.modifiedContent.push('        this.notifySubscribers();');
                     this.modifiedContent.push('    }');
+                    // move the line with the variable definition below the injected getters and setters
+                    this.modifiedContent.push(this.modifiedContent.splice(this.modifiedContent.length - 10, 1));
                 } else if (!getters.includes(stateVariableName)) {
                     this.modifiedContent.push('');
                     this.modifiedContent.push(`    get ${stateVariableName}() {`);
