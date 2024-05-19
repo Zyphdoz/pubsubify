@@ -313,7 +313,7 @@ function watchForChangesAndMirror() {
         const relativePath = path.relative(sourceDir, srcPath);
         const destPath = path.join(destDir, relativePath);
         if (fs.existsSync(destPath)) {
-            fs.removeSync(destPath);
+            fs.rmSync(destPath, { recursive: true });
         }
     });
 }
