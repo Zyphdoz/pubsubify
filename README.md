@@ -2,6 +2,9 @@
 
 Pubsubify is a Node.js script that provides the worlds simplest (to my knowledge) alternative to state management in React.
 
+> [!NOTE]  
+> This was a hobby project created out of curiosity. It is not a serious attempt to solve a problem in a better way than other state management systems. While pubsubify does a fairly good job at keeping things simple and reducing the amount of code you need to write to share state between components, there is probably a reason why a similar system has not already been adapted by everyone else so if you find the new syntax below (or lack thereof) inviting, you'd be wise to limit the use of pubsubify to hobby projects.
+
 ## How it works
 
 Write your state as a singleton class
